@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow_black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="2dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="70dp"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/title_add_aircraft"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/title_size"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/dialog_question_size"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_aircraft_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="@string/btn_radio_size_small"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/purple_500"
+                        android:text="@string/btn_radio_size_large"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/dialog_question_type"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_aircraft_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:buttonTint="@color/purple_500"
+                        android:text="@string/btn_radio_type_cargo"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/purple_500"
+                        android:text="@string/btn_radio_type_passenger"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/black"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="bottom|end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="24dp"
+                        android:backgroundTint="@android:color/holo_red_light"
+                        android:text="@string/action_cancel"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/white"/>
+
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_ok"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+</layout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aircraft</string>
+
+    <string name="title_add_aircraft">Add Aircraft</string>
+
+    <string name="dialog_question_size">Please select SIZE of Aircraft:</string>
+    <string name="btn_radio_size_large">Large</string>
+    <string name="btn_radio_size_small">Small</string>
+
+    <string name="dialog_question_type">Please select TYPE of Aircraft:</string>
+    <string name="btn_radio_type_cargo">Cargo</string>
+    <string name="btn_radio_type_passenger">Passenger</string>
+
+    <string name="action_cancel">Cancel</string>
+    <string name="action_add">ADD</string>
+    <string name="action_ok">OK</string>
+    <string name="action_reset">RESET</string>
+
+    <string name="msg_dialog_error">Please select SIZE and TYPE.</string>
+    <string name="msg_delete_error">Please follow DELETE RULES.</string>
+    <string name="msg_list_empty_error">Aircraft list is empty.\nCreate your list.\n Please, press\nbottom-right\nADD button.</string>
+</resources>

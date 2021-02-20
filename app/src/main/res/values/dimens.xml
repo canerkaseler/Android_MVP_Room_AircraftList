@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_list_min_height">48dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+
+
+</resources>

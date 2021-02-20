@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700"
+        tools:context=".views.MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_aircraft_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginBottom="64dp"/>
+
+        <TextView
+            android:id="@+id/tv_empty_list_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="48dp"
+            android:letterSpacing="0.2"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/msg_list_empty_error"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_add"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_reset"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <include
+            android:id="@+id/dialog_aircraft_add"
+            layout="@layout/dialog_aircraft_add"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</layout>
